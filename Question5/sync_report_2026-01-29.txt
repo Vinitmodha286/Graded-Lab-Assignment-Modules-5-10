@@ -1,0 +1,17 @@
+Sync report comparing: dirA  <->  dirB
+Report date: 2026-01-29
+
+Files only in dirA:
+a_only.txt
+subdir/sub1.txt
+
+Files only in dirB:
+b_only.txt
+subdir/sub1.tx
+
+Common files (contents MATCH): (1)
+common_same.txt
+
+Common files (contents DIFFER): (2)
+common_diff.txt
+subdir/nested_diff.txt
