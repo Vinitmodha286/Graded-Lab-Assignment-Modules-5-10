@@ -1,0 +1,5 @@
+CAPS@EXAMPLE.COM
+bad@company
+eve@malicious-site
+mary.sue@company.com
+user_underscore@domain.com

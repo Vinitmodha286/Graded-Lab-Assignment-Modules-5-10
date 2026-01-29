@@ -1,0 +1,13 @@
+alice@example.com
+bob@example.com
+eve@malicious-site
+john123@company.com
+mary.sue@company.com
+duplicate@company.com
+duplicate@company.com
+bad@company
+no-at-symbol.com
+CAPS@EXAMPLE.COM
+user99@domain.com
+user_underscore@domain.com
+123@numbers.com

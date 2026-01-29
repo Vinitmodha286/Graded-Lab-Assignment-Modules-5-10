@@ -1,0 +1,17 @@
+Command: chmod +x emailcleaner.sh
+Explanation: Makes the emailcleaner.sh script executable so it can be run from the terminal.
+
+Command: ./emailcleaner.sh emails.txt
+Explanation: Runs the script on emails.txt. The script extracts email-like tokens, separates those matching the required pattern (letters_and_digits@letters.com) into valid.txt and others into invalid.txt, and removes duplicates using sort and uniq.
+
+Command: cat valid.txt
+Explanation: Displays the list of unique valid email addresses extracted and saved to valid.txt.
+
+Command: cat invalid.txt
+Explanation: Displays the list of unique invalid email addresses extracted and saved to invalid.txt.
+
+Command: ./emailcleaner.sh
+Explanation: Running the script without an argument shows a usage message; the script requires the emails file as a single argument.
+
+Command: ./emailcleaner.sh nofile.txt
+Explanation: Running the script with a non-existent file displays an error message indicating the file does not exist.
