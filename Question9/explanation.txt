@@ -1,0 +1,11 @@
+Command: gcc -Wall -o zombie_demo zombie_demo.c
+Explanation: Compiles the C program zombie_demo.c into an executable named zombie_demo.
+
+Command: ./zombie_demo 4
+Explanation: Runs the program which forks 4 child processes. Each child exits quickly; the parent sleeps briefly (so zombies can be observed), then reaps each child using waitpid() and prints each child PID it cleaned up.
+
+Command: ps -eo pid,ppid,state,cmd | grep defunct
+Explanation: While the parent is sleeping, this command shows any defunct (zombie, state 'Z') child processes. After the parent reaps children, the command should show no defunct entries.
+
+Command: ./zombie_demo abc
+Explanation: Demonstrates argument validation; running with a non-numeric argument prints an error message and exits.
