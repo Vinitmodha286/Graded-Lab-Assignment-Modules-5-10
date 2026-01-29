@@ -1,0 +1,4 @@
+Hello world! This is a sample input.
+It contains words, punctuation, numbers like 123 and mixedCASE.
+Some longwordsincludingmanyletters and short a an I.
+Repeat words repeat Repeat.

@@ -1,0 +1,11 @@
+Command: chmod +x metrics.sh
+Explanation: Makes the metrics.sh script executable so it can be run from the terminal.
+
+Command: ./metrics.sh input.txt
+Explanation: Runs the script on input.txt. The script extracts words (letters and digits), finds the longest and shortest word, calculates the average word length (to two decimals), and counts the total number of unique words using tr, sort, uniq, wc, and awk.
+
+Command: ./metrics.sh
+Explanation: Running the script without an argument prints a usage message because one input file is required.
+
+Command: ./metrics.sh nofile.txt
+Explanation: Running the script with a non-existent file displays an error message indicating the file does not exist.
