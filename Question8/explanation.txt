@@ -1,0 +1,14 @@
+Command: chmod +x bg_move.sh
+Explanation: Makes the bg_move.sh script executable so it can be run from the terminal.
+
+Command: ./bg_move.sh testdir
+Explanation: Runs the script on the directory testdir. The script creates testdir/backup if needed, moves each top-level regular file into backup/ in the background (using &), prints each background process PID ($!), then waits for all PIDs to finish and reports their exit status.
+
+Command: ls -l testdir/backup
+Explanation: Lists files in the backup directory to verify the files were successfully moved.
+
+Command: ./bg_move.sh
+Explanation: Running without an argument prints a usage message; the script requires one directory path.
+
+Command: ./bg_move.sh no_such_dir
+Explanation: Running the script with a non-existent directory shows an error message and exits.
