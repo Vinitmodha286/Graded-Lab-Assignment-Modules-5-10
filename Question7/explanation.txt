@@ -1,0 +1,20 @@
+Command: chmod +x patterns.sh
+Explanation: Makes the patterns.sh script executable so it can be run from the terminal.
+
+Command: ./patterns.sh words.txt
+Explanation: Runs the script on words.txt. The script normalizes input to lowercase, extracts words (letters only), and writes vowel-only words to vowels.txt, consonant-only words to consonants.txt, and words that start with a consonant and contain at least one vowel to mixed.txt. Outputs are sorted and duplicates removed.
+
+Command: cat vowels.txt
+Explanation: Displays words that contain only vowels.
+
+Command: cat consonants.txt
+Explanation: Displays words that contain only consonants.
+
+Command: cat mixed.txt
+Explanation: Displays words that contain both vowels and consonants and start with a consonant.
+
+Command: ./patterns.sh
+Explanation: Running without an argument prints a usage message because the script requires one input file.
+
+Command: ./patterns.sh nofile.txt
+Explanation: Running with a non-existent file displays an error message indicating the file does not exist.
