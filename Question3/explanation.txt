@@ -1,0 +1,11 @@
+Command: chmod +x validate_results.sh
+Explanation: Makes the validate_results.sh script executable so it can be run from the terminal.
+
+Command: ./validate_results.sh marks.txt
+Explanation: Runs the script on marks.txt. The script reads each student's RollNo, Name, and three marks, counts how many subjects each student failed (passing mark = 33), prints students who passed all subjects and those who failed exactly one subject, and prints the counts for each category.
+
+Command: ./validate_results.sh
+Explanation: Running the script without an argument shows a usage message; the script requires a marks file as a single argument.
+
+Command: ./validate_results.sh notafile.txt
+Explanation: Running the script with a non-existent file displays an error message indicating the file does not exist.
