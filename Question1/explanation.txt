@@ -1,0 +1,14 @@
+Command: chmod +x analyze.sh
+Explanation: This command makes the analyze.sh script executable so it can be run from the terminal.
+
+Command: ./analyze.sh sample.txt
+Explanation: The script identifies the input as a file and displays the number of lines, words, and characters using the wc command.
+
+Command: ./analyze.sh testdir
+Explanation: The script identifies the input as a directory and counts the total number of files and the number of .txt files using the find command.
+
+Command: ./analyze.sh
+Explanation: The script checks the number of command-line arguments and displays an error message when no argument is provided.
+
+Command: ./analyze.sh wrongpath
+Explanation: The script checks whether the provided path exists and displays an error message when the path is invalid.
