@@ -1,0 +1,14 @@
+Command: chmod +x analyze_logs.sh
+Explanation: Makes the analyze_logs.sh script executable so it can be run from the terminal.
+
+Command: ./analyze_logs.sh sample.log
+Explanation: Runs the script against a sample log file. The script validates the file, counts total entries and the number of INFO, WARNING, and ERROR messages, shows the most recent ERROR, and saves the results to a dated report file.
+
+Command: cat logsummary_2026-01-29>.txt
+Explanation: Displays the contents of the generated report file (logsummary_2026-01-29.txt) to verify the summary and most recent ERROR entry were written correctly.
+
+Command: ./analyze_logs.sh
+Explanation: Running the script without an argument shows a usage message; the script requires exactly one argument (the logfile).
+
+Command: ./analyze_logs.sh nofile.log
+Explanation: Running the script with a non-existent file displays an error message indicating the file does not exist.
