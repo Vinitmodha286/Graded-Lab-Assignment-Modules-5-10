@@ -1,0 +1,10 @@
+Command: gcc -Wall -o signal_demo signal_demo.c
+Explanation: Compiles the C program signal_demo.c into an executable named signal_demo.
+
+Command: ./signal_demo
+Explanation: Runs the program where the parent process runs indefinitely. One child sends SIGTERM after 5 seconds and another child sends SIGINT after 10 seconds. The parent handles each signal differently and exits gracefully.
+
+Signal Handling:
+Explanation: SIGTERM triggers a graceful shutdown message, while SIGINT triggers an interrupt-specific message. Both signals are handled using a custom signal handler.
+
+In Image 5, I manually sent a signal (SIGINT) to the parent process using the keyboard (CTRL + C) and observed how the program handles it.
